@@ -1,7 +1,7 @@
 import React from 'react';
 
 function App() {
-  const value = 'World';
+  const value = 'FUCK SHIT';
   return <div>Hello Bye {value} some update !! why not updating!!!!! HELP!!!!</div>;
 }
 
