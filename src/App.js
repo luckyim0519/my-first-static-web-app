@@ -2,7 +2,7 @@ import React from 'react';
 
 function App() {
   const value = 'help me';
-  return <div>heya this is shathi</div>;
+  return <div>bye shathi</div>;
 }
 
 export default App;
