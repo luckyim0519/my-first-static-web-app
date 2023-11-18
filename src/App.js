@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 function App() {
-  const value = 'FUCK SHIT GUYS AZURE IS SHIT';
-  return <div>Hello Bye {value} some update !! why not updating!!!!! HELP!!!!</div>;
+  const [data, setData] = useState('');
+
+  useEffect(() => {
+    (async function () {
+      const { text } = await( await fetch(`/api/message`)).json();
+      setData(text);
+    })();
+  });
+
+  return <div>{data}</div>;
 }
 
 export default App;
