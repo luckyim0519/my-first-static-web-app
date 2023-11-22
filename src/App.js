@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Routes } from './Routes';
+
 
 function App() {
   const [data, setData] = useState('');
@@ -10,7 +12,7 @@ function App() {
     })();
   });
 
-  return <div>{data}</div>;
+  return <div>{data}</div>, <Routes />;
 }
 
 export default App;
