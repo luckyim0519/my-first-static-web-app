@@ -4,12 +4,6 @@ import SpeechHome from './components/SpeechHome';
 
 function App() {
   const [data, setData] = useState('');
-  useEffect(() => {
-    (async function () {
-      const { text } = await( await fetch(`/api/message`)).json();
-      setData(text);
-    })();
-  });
 
   return (
     <Router>
@@ -17,9 +11,7 @@ function App() {
         <h1>Hello, this is our AI classroom</h1>
         <Link to="/SpeechHome">SpeechHome</Link>
       </div>
-      <div>
-        {data}
-      </div>
+      <div>Hello?</div>
       <Route path="SpeechHome">
         <SpeechHome />
       </Route>
