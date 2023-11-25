@@ -17,11 +17,13 @@ function App() {
         <h1>Hello, this is our AI classroom</h1>
         <Link to="/SpeechHome">SpeechHome</Link>
       </div>
+      <div>
+        {data}
+      </div>
       <Route path="SpeechHome">
         <SpeechHome />
       </Route>
     </Router>
-  
   );
 }
 
