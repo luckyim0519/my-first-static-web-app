@@ -13,10 +13,13 @@ function App() {
 
   return (
     <Router>
+      <div>
+        <h1>Hello, this is our AI classroom</h1>
+        <Link to="/SpeechHome">SpeechHome</Link>
+      </div>
       <Route path="SpeechHome">
         <SpeechHome />
       </Route>
-      <div>{data}</div>
     </Router>
   
   );
